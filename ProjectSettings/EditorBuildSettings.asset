@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
+    path: Assets/Scenes/PC_Menu.unity
+    guid: 4cc15ebddb7f56b4894389c97b856e06
+  - enabled: 0
     path: Assets/Scenes/PCExplorer.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Mobile_Menu.unity
+    guid: ddb068259a9c9c64397fdd5d6551b851
   - enabled: 1
     path: Assets/Scenes/MobileGuide.unity
     guid: 7da42ed21fc6df54182d226c2553f050
