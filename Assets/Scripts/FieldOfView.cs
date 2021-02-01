@@ -65,8 +65,10 @@ public class FieldOfView : MonoBehaviour
         int vertexCount = viewPoints.Count + 1;
         Vector3[] vertices = new Vector3[vertexCount];
         int[] triangles = new int[(vertexCount - 2) * 3];
+        Color[] colours = new Color[vertexCount];
         
         vertices[0] = Vector3.zero;
+        colours[0] = new Color(0, 0, 0, 0);
         for (int i = 0; i < vertexCount - 1; i++)
         {
             vertices[i + 1] =  transform.InverseTransformPoint(viewPoints[i]) + Vector3.up*maskCutAwayDst;
@@ -76,11 +78,15 @@ public class FieldOfView : MonoBehaviour
                 triangles[i * 3 + 1] = i + 2;
                 triangles[i * 3 + 2] = i + 1;
             }
+
+            float alpha = vertices[i+1].magnitude / viewRadius;
+            colours[i+1] = new Color(0, 0, 0, alpha);
         }
 
         _viewMesh.Clear();
         _viewMesh.vertices = vertices;
         _viewMesh.triangles = triangles;
+        _viewMesh.colors = colours;
         _viewMesh.RecalculateNormals();
     }
 

@@ -340,6 +340,7 @@ GameObject:
   - component: {fileID: 1739315105720099779}
   - component: {fileID: 1739315105720099777}
   - component: {fileID: 1739315105720099778}
+  - component: {fileID: 1739315105720099780}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -417,7 +418,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1335
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -429,6 +430,18 @@ Camera:
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1739315105720099780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739315105720099776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8adfdbe8cd06c6e4d91d069c07c047a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6130853705017202067
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -440,6 +453,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Plane
+      objectReference: {fileID: 0}
+    - target: {fileID: 6130853704591065520, guid: 962cce51160fd3949b05ae49a9f9c9d5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6130853704591065524, guid: 962cce51160fd3949b05ae49a9f9c9d5,
         type: 3}
@@ -564,6 +582,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dungeon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8467412946451502274, guid: 50306065033aec94db0dab8489a15dc3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50306065033aec94db0dab8489a15dc3, type: 3}

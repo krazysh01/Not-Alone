@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ViewMeshMaterial
-  m_Shader: {fileID: 4800000, guid: a5a4caf92dd51c94b934dbddbf56a6ca, type: 3}
+  m_Shader: {fileID: 4800000, guid: cbe6479c535e5c44a9ef6b2c72eab43c, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _ALPHABLEND_ON _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
