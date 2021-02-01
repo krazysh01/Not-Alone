@@ -25,7 +25,7 @@ public class FieldOfViewRenderer : MonoBehaviour
 
         Camera shadowCam = shadowCamObject.AddComponent<Camera>();
         shadowCam.CopyFrom(_camera);
-        shadowCam.backgroundColor = Color.white;
+        shadowCam.backgroundColor = Color.black;
         shadowCam.cullingMask = LayerMask.GetMask(new[] {"FieldOfView"});
         shadowCam.targetTexture = _shadowMask;
     }

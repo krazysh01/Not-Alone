@@ -583,6 +583,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dungeon
       objectReference: {fileID: 0}
+    - target: {fileID: 8467412945775340877, guid: 50306065033aec94db0dab8489a15dc3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8467412946451502274, guid: 50306065033aec94db0dab8489a15dc3,
         type: 3}
       propertyPath: m_Layer

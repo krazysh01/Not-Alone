@@ -83,7 +83,10 @@
             fixed4 SpriteFragMasked(v2f_masked IN) : SV_Target
             {
                 fixed mask = tex2D(_FieldOfViewMask, IN.screenPos).r;
+                // return mask;
                 mask = pow(mask, _MaskPow);
+                mask = 1.0 - mask;
+
                 // return mask;
 
                 fixed4 c = SampleSpriteTexture (IN.texcoord) * IN.color;

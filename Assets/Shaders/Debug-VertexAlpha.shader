@@ -1,4 +1,4 @@
-﻿Shader "Debug/VertexAlpha"
+﻿Shader "Custom/AdditiveVertexAlpha"
 {
     Properties
     {
@@ -7,9 +7,11 @@
     {
         Tags 
         { 
-        	"RenderType"="Opaque" 
+        	"RenderType"="Transparent"
         }
         LOD 100
+        ZWrite Off
+        Blend One One
 
         Pass
         {
